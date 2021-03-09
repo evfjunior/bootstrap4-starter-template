@@ -4,7 +4,7 @@
 
 <hr>
 
-### Sumary
+### Summary
 
 - [About](#about)
 - [Main Files](#main-files)
