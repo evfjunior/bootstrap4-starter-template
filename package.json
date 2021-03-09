@@ -10,6 +10,7 @@
     "prefix-css": "postcss --replace src/css/main.css --use autoprefixer --map",
     "purge-css": "purgecss --css src/css/main.css --content src/index.html --output src/css/",
     "build-css": "npm-run-all compile-css prefix-css",
+    "lint-css": "stylelint src/scss/",
     "dev": "npm-run-all --parallel compile-watch server",
     "start": "npm-run-all build-css server"
   },
@@ -31,7 +32,9 @@
     "postcss": "^8.2.7",
     "postcss-cli": "^8.3.1",
     "purgecss": "^4.0.2",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "stylelint": "^13.12.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "dependencies": {
     "bootstrap": "^4.6.0"
