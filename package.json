@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "compile-watch": "sass src/scss/main.scss src/css/main.css --watch",
+    "compile-css": "sass src/scss/main.scss src/css/main.css",
     "server": "lite-server --baseDir=\"src\"",
     "prefix-css": "postcss --replace src/css/main.css --use autoprefixer --map",
-    "dev": "npm-run-all  --parallel compile-watch server"
+    "build-css": "npm-run-all compile-css prefix-css",
+    "dev": "npm-run-all --parallel compile-watch server",
+    "start": "npm-run-all build-css server"
   },
   "repository": {
     "type": "git",
