@@ -1,1 +1,29 @@
 // Override Bootstrap variables
+
+// Color system
+$black: #121212;
+$white: #c7c7c7;
+
+$body-bg: $black;
+$body-color: $white;
+
+$theme-colors: (
+  primary: $purple,
+  secondary: $white,
+);
+
+// Custom colors
+$dark-gray: lighten($black, 5%);
+$muted-gray: lighten($black, 20%);
+
+// Options
+$enable-shadows: true;
+$enable-responsive-font-sizes: true;
+
+// Jumbotron
+$jumbotron-bg: $dark-gray;
+
+// Modal
+$modal-content-bg: $dark-gray;
+$modal-header-border-color: $muted-gray;
+$modal-footer-border-color: $muted-gray;
